@@ -1,0 +1,180 @@
+.top_cart{
+    background-image: url(./img/top_cart.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    height: 400px;
+}
+
+.cart{
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    
+    &_content{
+        grid-column: span 8;
+    }
+
+    &_item{
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        row-gap: 60px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 0.5px solid #CACDD8;
+    }
+
+    &_left{
+        display: flex;
+        gap: 32px;
+    }
+
+    &_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 16px;
+        width: 276px;
+    }
+
+    &_name_box{
+        padding-bottom: 14px;
+        padding-left: 27px;
+        padding-right: 27px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    &price{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+
+    &_link{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &_inlink{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        color: #000000;
+    }
+
+    &_inlink:hover{
+        text-decoration: none;
+        color: #888888;
+    }
+
+    &_input_item{
+        border: none;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        width: 71px;
+        background: #F7F6F6;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    &_form{
+        height: 556px;
+        padding-left: 28px;
+        padding-right: 64px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        background: #F7F6F6;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    &_form_title{
+        text-align: center;
+        margin-top: 42px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    &_input{ 
+        width: 100%;
+        border: 0px;
+        border-bottom: 1px solid #CACDD8;
+        outline: none;
+        background: #F7F6F6;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &_input::placeholder{
+        color: #000000;
+    }
+
+    &_form_input{
+        display: flex;
+        gap: 40px;
+        padding-top: 35px;
+        padding-bottom: 64px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &_form_price{
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &_button{
+        animation: myAnim 2s ease 0s infinite normal forwards;
+        margin-top: 18px;
+        width: 290px;
+        height: 41px;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        background: none;
+    }
+
+    &_btn{
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        &_button{
+            border: 1px solid #000000;
+            border-radius: 50px;
+            background: none;
+            width: 200px;
+            height: 37px;
+            border-radius: 50px;
+        }    
+    }
+
+
+}
